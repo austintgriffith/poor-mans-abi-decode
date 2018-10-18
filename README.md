@@ -25,7 +25,7 @@ event Hello(bytes32 message,uint256 number,address addy);
 ```
 Sure, we can call this directly and pass in the given arguments.
 
-BUT, what if we want to pack the arguments into a byte array for standardization?
+BUT, what if we want to pack the arguments into a byte array for standardization with flexibility?
 
 A friend of mine, [Steve Ellis](https://github.com/se3000), taught me this cool trick we called the "poor man's decode abi":
 
