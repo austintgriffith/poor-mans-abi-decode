@@ -1,4 +1,4 @@
-# Poor Man's DecodeABI()
+# 🤠✂️ Poor Man's DecodeABI()
 
 Normally you have to cut up a byte array using a bunch of lines of assembly.
 
