@@ -1,6 +1,6 @@
 # Poor Man's DecodeABI()
 
-Normally you have to cut up a byte array using a bunch of lines of assembly. 
+Normally you have to cut up a byte array using a bunch of lines of assembly.
 
 Here is a way to easily split up a byte array by 'calling' address(this) in Solidity!
 
@@ -42,6 +42,10 @@ function abstracted(bytes data) public returns (bool success){
 
 For reference, here is how you do the encoding of the byte array:
 ```javascript
-contracts.Example.hello(this.state.web3.utils.toHex(this.state.broadcastText),this.state.broadcastNumber,this.state.address).encodeABI()
+contracts.Example.hello(
+  this.state.web3.utils.toHex(this.state.broadcastText),
+  this.state.broadcastNumber,
+  this.state.address
+).encodeABI()
 ```
 (if you aren't using [clevis and dapparatus](https://medium.com/@austin_48503/%EF%B8%8Fclevis-blockchain-orchestration-682d2396aeef), you would do 'contractname.methods.hello...')
