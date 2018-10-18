@@ -5,9 +5,7 @@ Normally you have to cut up a byte array using a bunch of lines of assembly.
 Here is a way to easily split up a byte array by 'calling' address(this) in Solidity!
 
 
-
-
-
+[![screencast.png](https://user-images.githubusercontent.com/2653167/47154252-06c4e480-d29f-11e8-8ebb-ff9cb2a7835a.jpg)](https://youtu.be/FvFD_2OlfZQ)
 
 
 
