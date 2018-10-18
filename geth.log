@@ -1,0 +1,81 @@
+Ganache CLI v6.1.8 (ganache-core: 2.2.1)
+
+Available Accounts
+==================
+(0) 0x4eb3883dc71110548d2908f7cd4cadc9c28fb4ca (~100 ETH)
+(1) 0xa753b4a708a7c0992d0c869adfa68151f5356d99 (~100 ETH)
+(2) 0x503ad0463b0a37fa8e167aeb329668b599d8957b (~100 ETH)
+(3) 0x1f5b0dba4bde666b4111aba4aeda1d722f9fe70a (~100 ETH)
+(4) 0x45a1d9c19b25afb456303961e479e6b29a9f6910 (~100 ETH)
+(5) 0xfc153774902186fbd00afac0c82fa29a760a89e1 (~100 ETH)
+(6) 0x96dc40f720666ba9cdf307c5970b3eb039fdf76b (~100 ETH)
+(7) 0x07c504f56b683a59ed58d9ff2ef7ea822b099b08 (~100 ETH)
+(8) 0x823346471aecd3dff44facef001a84de1d828b68 (~100 ETH)
+(9) 0xdeccd8b54cbcf4e2889c86cf02fb076192934e10 (~100 ETH)
+
+Private Keys
+==================
+(0) 0x9c7b29783f4e4b2dd14dbb8d15ec15b257e288a43868f703ed002f574464154d
+(1) 0xaae001bc457e0a222eee875bde142958cf1bf1a65cded75a6e4fd366d1e2714e
+(2) 0x1ce3062562580446b4a62b446928aad30639a1c2fca0f8ea16e9eb5b7600ed46
+(3) 0x9af4ac2486e8103bdfedaf3e43ff62831798b3b31b1a0cd7590f363aaf24a686
+(4) 0x2c366d5e04ddd303fcba3173ad2999b82f4369ebe231e27da05932ef0fbf019a
+(5) 0xea11186810f08769372b0c2a533e81225f66747407c2618649fec350cd6e1f44
+(6) 0xa9a5df2b83b99af7dcb3cb33e77c5a4edb81538964b4dc32a0c852ec240d8865
+(7) 0xda71cd1c73214f3b39dbe2fbbf3adb9765ae9498c24326d6e100da8d16c3f73d
+(8) 0x651872f59d8c71af0ddb184e4b50d34a3d3881dd65a2817b71ed820e99fe089b
+(9) 0xfbb082ecf285b43c0b38f060cb77c594adefece79d21607e4ac9722a5c8aaa30
+
+HD Wallet
+==================
+Mnemonic:      purpose art upset depend vast three economy toss puzzle thunder ladder expose
+Base HD Path:  m/44'/60'/0'/0/{account_index}
+
+Gas Price
+==================
+20000000000
+
+Gas Limit
+==================
+6721975
+
+Listening on 0.0.0.0:8545
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_getBlockByNumber

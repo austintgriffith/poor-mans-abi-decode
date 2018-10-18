@@ -1,0 +1,29 @@
+ >>> START SITE
+ ]]] ]]] STARTING REACT DEV SERVER...
+
+> dapp@0.1.0 start /dapp
+> react-scripts start
+
+Starting the development server...
+
+Compiled with warnings.
+
+./src/App.js
+  Line 3:   'ContractLoader' is defined but never used         no-unused-vars
+  Line 3:   'Transactions' is defined but never used           no-unused-vars
+  Line 3:   'Events' is defined but never used                 no-unused-vars
+  Line 3:   'Scaler' is defined but never used                 no-unused-vars
+  Line 3:   'Blockie' is defined but never used                no-unused-vars
+  Line 3:   'Address' is defined but never used                no-unused-vars
+  Line 3:   'Button' is defined but never used                 no-unused-vars
+  Line 22:  'account' is assigned a value but never used       no-unused-vars
+  Line 22:  'contracts' is assigned a value but never used     no-unused-vars
+  Line 22:  'tx' is assigned a value but never used            no-unused-vars
+  Line 22:  'gwei' is assigned a value but never used          no-unused-vars
+  Line 22:  'block' is assigned a value but never used         no-unused-vars
+  Line 22:  'avgBlockTime' is assigned a value but never used  no-unused-vars
+  Line 22:  'etherscan' is assigned a value but never used     no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
