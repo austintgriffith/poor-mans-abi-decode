@@ -1,10 +1,17 @@
-# poor-mans-abi-decode
+# Poor Man's DecodeABI()
 
-Easily split up a byte array by 'calling' address(this) in Solidity - Poor Man's ABI Decode
+Normally you have to cut up a byte array using a bunch of lines of assembly. 
+
+Here is a way to easily split up a byte array by 'calling' address(this) in Solidity!
+
+
+
+
+
+
+
 
 Does DecodeABI() exist in Solidity yet? I don't think so, but here's a trick to do it easily...
-
-
 
 # example
 
