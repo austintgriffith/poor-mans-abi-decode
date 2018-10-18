@@ -37,4 +37,4 @@ For reference, here is how you do the encoding of the byte array:
 ```javascript
 contracts.Example.hello(this.state.web3.utils.toHex(this.state.broadcastText),this.state.broadcastNumber,this.state.address).encodeABI()
 ```
-(if you aren't using clevis and dapparatus, you would do 'contractname.methods.hello...')
+(if you aren't using [clevis and dapparatus](https://medium.com/@austin_48503/%EF%B8%8Fclevis-blockchain-orchestration-682d2396aeef), you would do 'contractname.methods.hello...')

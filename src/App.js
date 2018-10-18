@@ -34,7 +34,7 @@ class App extends Component {
          }}
        />
       )
-      /*
+
       connectedDisplay.push(
         <ContractLoader
          key="ContractLoader"
@@ -69,33 +69,82 @@ class App extends Component {
             console.log("Transaction Receipt",transaction,receipt)
           }}
         />
-      )*/
-      /*
+      )
+
+      let messages = []
+      for(let e in this.state.events){
+        console.log("EVENT",this.state.events[e])
+        let message = this.state.web3.utils.hexToUtf8(this.state.events[e].message)
+        messages.push(
+          <div key={e}>
+            {message},{this.state.events[e].number},{this.state.events[e].addy}
+          </div>
+        )
+      }
+
       if(contracts){
         contractsDisplay.push(
           <div key="UI" style={{padding:30}}>
             <div>
               <Address
                 {...this.state}
-                address={contracts.YOURCONTRACT._address}
+                address={contracts.Example._address}
               />
             </div>
-            broadcast string: <input
-                style={{verticalAlign:"middle",width:400,margin:6,maxHeight:20,padding:5,border:'2px solid #ccc',borderRadius:5}}
-                type="text" name="broadcastText" value={this.state.broadcastText} onChange={this.handleInput.bind(this)}
-            />
-            <Button color={this.state.doingTransaction?"orange":"green"} size="2" onClick={()=>{
+            <div>
+              string: <input
+                  style={{verticalAlign:"middle",width:400,margin:6,maxHeight:20,padding:5,border:'2px solid #ccc',borderRadius:5}}
+                  type="text" name="broadcastText" value={this.state.broadcastText} onChange={this.handleInput.bind(this)}
+              />
+            </div>
+            <div>
+              number: <input
+                  style={{verticalAlign:"middle",width:400,margin:6,maxHeight:20,padding:5,border:'2px solid #ccc',borderRadius:5}}
+                  type="text" name="broadcastNumber" value={this.state.broadcastNumber} onChange={this.handleInput.bind(this)}
+              />
+            </div>
+            <div>
+              address: <input
+                  style={{verticalAlign:"middle",width:400,margin:6,maxHeight:20,padding:5,border:'2px solid #ccc',borderRadius:5}}
+                  type="text" name="address" value={this.state.address} onChange={this.handleInput.bind(this)}
+              />
+            </div>
+            <Button color={"green"} size="2" onClick={()=>{
                 this.setState({doingTransaction:true})
-                //tx(contracts.YOURCONTRACT.YOURFUNCTION(YOURARGUMENTS),(receipt)=>{
-                //  this.setState({doingTransaction:false})
-                //})
+                tx(contracts.Example.hello(this.state.web3.utils.toHex(this.state.broadcastText),this.state.broadcastNumber,this.state.address),(receipt)=>{
+                  this.setState({doingTransaction:false})
+                })
               }}>
               Send
             </Button>
+            <Button color={"blue"} size="2" onClick={()=>{
+                this.setState({crafted:contracts.Example.hello(this.state.web3.utils.toHex(this.state.broadcastText),this.state.broadcastNumber,this.state.address).encodeABI()})
+              }}>
+              Craft
+            </Button>
+            <div style={{padding:10,fontSize:14}}>
+              <h2>Messages:</h2>
+              {messages}
+            </div>
+
+            <div>
+              crafted: <input
+                  style={{verticalAlign:"middle",width:800,margin:6,maxHeight:20,padding:5,border:'2px solid #ccc',borderRadius:5}}
+                  type="text" name="crafted" value={this.state.crafted} onChange={this.handleInput.bind(this)}
+              />
+            </div>
+            <Button color={"green"} size="2" onClick={()=>{
+                this.setState({doingTransaction:true})
+                tx(contracts.Example.abstracted(this.state.crafted),(receipt)=>{
+                  this.setState({doingTransaction:false})
+                })
+              }}>
+              Send Crafted
+            </Button>
             <Events
               config={{hide:false}}
-              contract={contracts.YOURCONTRACT}
-              eventName={"YOUREVENT"}
+              contract={contracts.Example}
+              eventName={"Hello"}
               block={block}
               onUpdate={(eventData,allEvents)=>{
                 console.log("EVENT DATA:",eventData)
@@ -105,7 +154,7 @@ class App extends Component {
           </div>
         )
       }
-      */
+
     }
     return (
       <div className="App">
@@ -115,6 +164,7 @@ class App extends Component {
            console.log("metamask state update:",state)
            if(state.web3Provider) {
              state.web3 = new Web3(state.web3Provider)
+             state.address=state.account
              this.setState(state)
            }
           }}
