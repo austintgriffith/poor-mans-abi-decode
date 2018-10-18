@@ -40,7 +40,7 @@ function abstracted(bytes data) public returns (bool success){
 }
 ```
 
-For reference, here is how you do the encoding of the byte array:
+For reference, here is how you do the encoding of the byte array in javascript:
 ```javascript
 contracts.Example.hello(
   this.state.web3.utils.toHex(this.state.broadcastText),
