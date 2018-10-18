@@ -1,5 +1,17 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+**/*.blockNumber
+**/*.head.address
+**/*.previous.address
+**/*.compiled
+**/*.bytecode
+**/*.abi
+**/*.address
+src/contracts
+deploy.log
+public/reload.txt
+geth.log
+
 # dependencies
 /node_modules
 
